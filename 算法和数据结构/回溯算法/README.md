@@ -1,17 +1,16 @@
 <!--
  * @Date: 2020-09-27 20:07:26
  * @LastEditors: hu.wenjun
- * @LastEditTime: 2020-09-27 21:29:46
+ * @LastEditTime: 2020-09-28 09:36:30
 -->
 ### 回溯算法
 
-#### 各大厂面试题汇总
+#### 力扣题目总结
 1. [组合总和](https://leetcode-cn.com/problems/combination-sum/discuss/16502/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partitioning)/?utm_source=LCUS&utm_medium=ip_redirect_q_uns&utm_campaign=transfer2china)
 2. [组合总和 II](https://leetcode-cn.com/problems/combination-sum-ii/)
 3. [全排列](https://leetcode-cn.com/problems/permutations/)
 4. [全排列 II](https://leetcode-cn.com/problems/permutations-ii/)
 5. [括号生成](https://leetcode-cn.com/problems/generate-parentheses/)
-6. [括号生成](https://leetcode-cn.com/problems/generate-parentheses/)
 
 
 #### 框架套路
@@ -43,12 +42,13 @@ backtrace()
 return ans
 ```
 
-力扣举例说明：
-***
+力扣题目举例说明：
+
 题目1:[全排列](https://leetcode-cn.com/problems/permutations/)
 
 给定一个 <strong>没有重复</strong> 数字的序列，返回其所有可能的全排列
 示例：
+```
 输入： [1,2,3]
 输出：
 [
@@ -60,6 +60,7 @@ return ans
   [3,2,1]
 ]
 
+```
 首先画决策树如下：
 ![](../images/WX20200927-202116@2x.png)
 
@@ -105,6 +106,7 @@ var permute = function(nums) {
 
 给定一个<strong>可包含重复</strong>数字的序列，返回所有不重复的全排列。
 示例：
+```
 输入： [1,1,2]
 输出：
 [
@@ -112,6 +114,7 @@ var permute = function(nums) {
   [1,2,1],
   [2,1,1]
 ]
+```
 
 首先，我们可以先复制第一道的解法，查看打印结果如下：
 [[1,1,2],[1,2,1],[1,1,2],[1,2,1],[2,1,1],[2,1,1]]
@@ -153,6 +156,7 @@ var permuteUnique = function(nums) {
 candidates 中的每个数字在每个组合中只能使用一次。
 
 示例：
+```
 输入：  candidates = [10,1,2,7,6,1,5], target = 8
 输出：
 [
@@ -161,6 +165,7 @@ candidates 中的每个数字在每个组合中只能使用一次。
   [2, 6],
   [1, 1, 6]
 ]
+```
 
 首先我们读题：
 需要用到决策树，每个数字在每个组合中只能用到一次,所以使用used, 有target值，结束条件是sum===target
