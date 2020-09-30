@@ -1,7 +1,7 @@
 <!--
  * @Date: 2020-09-29 16:55:40
  * @LastEditors: hu.wenjun
- * @LastEditTime: 2020-09-29 21:02:52
+ * @LastEditTime: 2020-09-30 10:14:48
 -->
 资料：
 1. https://juejin.im/post/6844903953734336525
@@ -11,6 +11,7 @@
 5. https://zhuanlan.zhihu.com/p/78362028
 6. https://mp.weixin.qq.com/s/p98EkrxhNtAKb9ex0eY61w
 7. https://github.com/phodal/microfrontends
+8. https://mp.weixin.qq.com/s/o7L_Sxl1s0uKywRy-Ao5fg
    
 ### 什么是微前端
 
@@ -123,5 +124,11 @@ html entry 是 通过 Web Component 集成
 JS隔离
 沙箱环境（具体实施待研究）
 
+接下来介绍qiankun
+什么是qiankun 它是一个基于single-spa的微前端实现库，由蚂蚁金服提供的比较成熟的微前端的框架。
 
-接下来是qiankun的使用demo
+qiankun 源码解析时刻
+
+<strong>初始化全局配置-start(opts)</strong>
+
+我们从两个基础API- registerMicroApps(apps, lifeCycles?) - 注册子应用 和 start(opts?) - 启动主应用开始 
