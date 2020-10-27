@@ -1,7 +1,7 @@
 <!--
  * @Date: 2020-10-27 09:09:58
  * @LastEditors: hu.wenjun
- * @LastEditTime: 2020-10-27 09:44:30
+ * @LastEditTime: 2020-10-27 10:15:46
 -->
 
 ### axios
@@ -175,6 +175,12 @@ function getDefaultAdapter() {
 }
 ```
 总结，浏览器端XHR，Node.js使用node的http或者HTTPS模块
+
+#### cookie设置
+
+```
+axios.defaults.withCredential = true
+```
 
 
 参考资源：
