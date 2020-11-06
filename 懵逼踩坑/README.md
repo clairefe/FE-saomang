@@ -1,15 +1,16 @@
 <!--
  * @Date: 2020-10-23 11:20:32
  * @LastEditors: hu.wenjun
- * @LastEditTime: 2020-10-26 09:52:41
+ * @LastEditTime: 2020-10-29 16:33:13
 -->
 ### 懵逼踩坑汇集
 
-1. IOS14中H5页面在APP的回退中第一次有问题
+1. IOS14中react-router props.history.goBack() not work in ios WeChat browser after first history.push('xxx')
    
-   可能是由于react-router的版本开发
+   [react-router issue](https://github.com/ReactTraining/react-router/issues/7620)
 
-2. font-display: swap;使用
+2. 中文字体体积太大导致加载时间过长，字体加载完成前不展示预览内容，影响页面性能
+  font-display: swap;使用
    
    font-display是一个新的css属性.
   
